@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -7,10 +9,10 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     margin: 0;
     font-family: 'avantgarde_bk_btbook';
-    color: #2c2f88;
+    color: #2c2f88 !important;
 }
 
 .my-menu{
@@ -28,7 +30,6 @@ body {
     text-align: center;
     width: 20%;
     font-size: 1.3vw;
-    font-weight: 200;
     text-transform: uppercase;
     color: #2c2f88;
     transition: all ease 0.6ms;
@@ -40,4 +41,113 @@ body {
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     border-radius: 40px;
+}
+
+.my-home-left{
+    background-color: hsla(44, 99%, 59%, 0.4);
+}
+
+.my-home-left h3 {
+    font-family: 'rossanova_personal_usebold';
+    margin-left: -25%;
+    font-size: 4vw;
+    margin-top: 15%;
+}
+
+.my-home-left p, .my-text-about{
+    margin-top: 2vw;
+    width: 95%;
+    margin-left: 5%;
+    font-size: 1.1vw;
+}
+
+.subtitle{
+    font-family: 'rossanova_personal_usebold';
+    font-size: 4vw;
+    margin-top: 15%;
+}
+.my-carousel-slide{
+    background-color: hsla(44, 99%, 59%, 0.2);
+}
+
+.my-carousel-slide h3{
+    font-family: 'rossanova_personal_usebold';
+    font-size: 4vw;
+    margin-top: 45%;
+    color: hsla(44, 99%, 59%, 1);
+}
+.my-carousel-slide p, .my-about p{
+    font-size: 1.2vw;
+    margin-top: 5%;
+    color: hsla(44, 99%, 59%, 1);
+}
+.my-span{
+    color: #2c2f88 !important;
+}
+.my-about{
+background-color: hsla(44, 99%, 59%, 0.2);
+}
+.my-about h3{
+    font-family: 'rossanova_personal_usebold';
+    font-size: 2.5rem;
+    color: hsla(44, 99%, 59%, 1);
+    margin-top: 5%;
+}
+
+.separador {
+    margin-top: -1px;
+    z-index: 100 !important;
+    z-index: 50;
+    height: 3vw;
+    background-color: #f6a000;
+    color: #2c2f88;
+    font-size: 1.7vw;
+}
+
+.textoanimado {
+    z-index: 12;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    animation: deslizar 30s linear infinite;
+}
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 992px){
+    .my-home-left h3 {
+   
+        margin-left: 5%;
+        font-size: 4vw;
+        margin-top: 5%;
+    }
+    
+    .my-home-left p, .my-text-about{
+        font-size: 2vw;
+    }
+
+    .my-carousel-slide h3, .my-about h3{
+        text-align: left !important;
+        font-size: 26px;
+        margin-top: 5%;
+    }
+    .my-carousel-slide p, .my-about p{
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+    .separador {
+        height: 5vw;
+        font-size: 2.5vw;
+    
+    
+    }
 }

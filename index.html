@@ -16,59 +16,272 @@
     />
   </head>
   <body>
-    <header class="container d-flex justify-content-center py-5 ">
-        <img src="img/logo.png" alt="" class=" col-8 img-fluid">
+    <header class="container d-flex justify-content-center py-5" id="header">
+      <img src="img/logo.png" alt="" class="col-8 img-fluid" />
     </header>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid ">
-          <!-- Botón que activa el offcanvas para pantallas pequeñas -->
-          <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Menú en pantallas grandes -->
-          <div class="collapse navbar-collapse d-none d-lg-flex  " id="navbarNavAltMarkup">
-            <div class="navbar-nav my-menu justify-content-around">
-              <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="#servicios">Servicios</a>
-              <a class="nav-link" href="#about">About</a>
-              <a class="nav-link" href="#menu">Menú</a>
-              <a class="nav-link" href="#reservar">Reservar</a>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <!-- Botón que activa el offcanvas para pantallas pequeñas -->
+        <button
+          class="btn btn-primary d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasLeft"
+          aria-controls="offcanvasLeft"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú en pantallas grandes -->
+        <div
+          class="collapse navbar-collapse d-none d-lg-flex"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav my-menu justify-content-around">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#servicios">Servicios</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#menu">Menú</a>
+            <a class="nav-link" href="#reservar">Reservar</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Offcanvas desde la izquierda para pantallas pequeñas -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasLeft"
+      aria-labelledby="offcanvasLeftLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLeftLabel">Menú</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reservas">Reservar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container-fluid my-5" id="home">
+      <div class="row justify-content-center justify-content-lg-end g-0">
+        <div class="col-10 col-md-7 col-lg-4 my-home-left p-2 p-lg-5">
+          <h3>Nuestro producto, nuestro valor.</h3>
+          <p>
+            En La Vergelia somos tan conscientes de la importancia de un buen
+            producto que nos ocupamos hasta de su producción. Estamos
+            convencidos de que las verduras y frutas de temporada son más que
+            suficientes para llevar a cabo una cocina expepcional siempre y
+            cuando se respete su ciclo de maduración y crecimiento y se cocinen
+            con mimo. ¡Hemos venido a demostrarlo!
+          </p>
+        </div>
+        <div class="col-10 col-md-7 col-lg-5">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/plato.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="/img/flores.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="/img/verduras.jpg" class="d-block w-100" alt="..." />
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-      
-      <!-- Offcanvas desde la izquierda para pantallas pequeñas -->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLeftLabel">Menú</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link"  href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Menú</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reservas">Reservar</a>
-            </li>
-          </ul>
+      </div>
+    </section>
+    <section class="container-fluid my-5" id="servicios">
+      <div class="col-9 my-2" style="margin: auto">
+        <h3 class="subtitle text-center text-lg-start">Del huerto a la mesa</h3>
+        <figure>
+          <img src="/img/concept-vergelia.svg" class="img-fluid my-5" alt="" />
+        </figure>
+      </div>
+      <div class="col-10 mt-5" style="margin: auto">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="my-carousel-slide d-flex flex-column flex-lg-row align-items-center"
+              >
+                <img
+                  src="/img/huertomanos.jpg"
+                  class="img-fluid col-11 col-lg-7 m-3 m-xl-5"
+                  alt="..."
+                />
+                <div class="col-10 col-lg-4">
+                  <h3>El huerto</h3>
+                  <p class="mb-5 m-lg-0">
+                    En La Vergelia nos ocupamos del proceso de producción del
+                    85% de los productos con los que trabajamos asegurando de
+                    esta manera la mejor calidad y sabor además de un trato
+                    ético y respetuoso de la tierra y sus trabajadores.
+                    Dependemos de los ciclos de la naturaleza y es nuestro
+                    compromiso respetarlos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="my-carousel-slide d-flex flex-column flex-lg-row align-items-center"
+              >
+                <img
+                  src="/img/bolsanaranjas.jpg"
+                  class="img-fluid col-11 col-lg-7 m-3 m-xl-5"
+                  alt="..."
+                />
+                <div class="col-10 col-lg-4">
+                  <h3>El mercado</h3>
+                  <p class="mb-5 m-lg-0">
+                    Estamos tan orgullosos de nuestro producto que queremos que
+                    lo puedas disfrutar en tu hogar, en La Vergelia disponemos
+                    de un mercado de productos de nuestra huerta, reduciendo así
+                    los intermediarios y garantizando un precio justo. Podrás
+                    encontrar tambien una exquisita selección de productos de
+                    comercio justo y de proximidad.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="my-carousel-slide d-flex flex-column flex-lg-row align-items-center"
+              >
+                <img
+                  src="/img/platozanahorias.jpg"
+                  class="img-fluid col-11 col-lg-7 m-3 m-xl-5"
+                  alt="..."
+                />
+                <div class="col-10 col-lg-4">
+                  <h3>El restaurante</h3>
+                  <p class="mb-5 m-lg-0">
+                    Hemos venido a demostrar que la comida vegana puede ser
+                    tambien creativa, contemporanea y exquisita. En nuestro
+                    restaurante puedes disfrutar de platos de lo más variado
+                    mientras cuidas del planeta y de tu salud. Nuestro equipo de
+                    chefs han diseñado un menú excepcional, respetando el
+                    producto y trayendo a tu mesa sabores sorprendentes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
+    </section>
+
+    <section class="container-fluid my-5 mx-0 px-0" id="about">
+      <div class="col-9 my-2" style="margin: auto">
+        <h3 class="subtitle text-center text-lg-start">Nuestra misión</h3>
+      </div>
+      <div class="row g-0 mt-5 align-items-stretch">
+        <div class="col-12 col-md-6 col-xl-3">
+          <img src="/img/manopepinoabout.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 p-2 p-lg-3 my-about">
+          <h3 class="text-center text-lg-start ps-sm-3 pe-sm-5 px-md-3">Creemos en el producto</h3>
+          <p class="mt-sm-0 ps-sm-3 pe-sm-5 px-md-3">
+            Creemos firmemente que el alimento es la base para una vida
+            saludable y equilibrada. Por esta razón decidimos crear nuestro
+            propio huerco orgánico, donde cultivamos una amplia variedad de
+            ingredientes frescos y nutritivos que utilizamos en nuestros platos.
+            Garantizando que cada visita a La Vergelia esté llena de sabor y
+            benefidios para tú salud.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <img src="/img/aguacateabout.jpg" class="img-fluid" width="100%" alt="" />
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <img src="/img/manosensaladaabout.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+      <div class="separador">
+        <div class="textoanimado">
+          <p>¡Nueva apertura! 26/06 ¡Ven a conocernos!</p>
+        </div>
+      </div>
+      <div class="container my-5 ">
+        <p class="col-12 col-lg-10 text-center my-text-about" style="margin: auto;">
+          Estamos orgullosos de ser pioneros en esta propuesta de negocio que
+          nace de nuestra pasión por la comida vegana y la sostenibilidad.
+          Nuestro objetivo es brindarte una experiencia gastronómica
+          inolvidable, donde puedas disfrutar de platos deliciosos, frescos y
+          nutritivos, sabiendo que estas apoyado un enfoque sostenible del
+          consumo de alimentos y de su producción.
+        </p>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
