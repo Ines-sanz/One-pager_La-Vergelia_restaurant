@@ -122,6 +122,21 @@ background-color: hsla(44, 99%, 59%, 0.2);
         transform: translateX(-100%);
     }
 }
+.my-menu{
+margin: auto;
+position: relative;
+}
+
+.my-menu img{
+    position: absolute;
+    top:0;
+    right: 20%;
+    z-index: 0;
+}
+
+.my-menu img.active{
+    z-index: 1;
+}
 
 @media (max-width: 992px){
     .my-home-left h3 {
