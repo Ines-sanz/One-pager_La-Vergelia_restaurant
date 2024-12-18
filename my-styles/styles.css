@@ -9,19 +9,19 @@ body {
   color: #2c2f88 !important;
 }
 
-.my-nav-button{
-    background-color:hsla(44, 99%, 59%, 0.4) !important;  
+.my-nav-button {
+  background-color: hsla(44, 99%, 59%, 0.4) !important;
 }
 .offcanvas {
-    transition: transform 0.3s ease-in-out;
-  }
-.my-offcanvas{
-    color: #2c2f88 !important;
-    text-transform: uppercase;
-    font-family: inherit;
-        width: 60% !important;
-        max-width: 400px; 
-    }
+  transition: transform 0.3s ease-in-out;
+}
+.my-offcanvas {
+  color: #2c2f88 !important;
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 60% !important;
+  max-width: 400px;
+}
 
 .my-nav {
   width: 80% !important;
@@ -94,6 +94,7 @@ body {
 .my-span {
   color: #2c2f88 !important;
 }
+
 .my-about {
   background-color: hsla(44, 99%, 59%, 0.2);
 }
@@ -114,24 +115,6 @@ body {
   font-size: 1.7vw;
 }
 
-.textoanimado {
-  z-index: 12;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  animation: deslizar 30s linear infinite;
-}
-
-@keyframes deslizar {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
 .my-menu {
   margin: auto;
   position: relative;
@@ -204,16 +187,104 @@ body {
   transform: scale(1.1);
 }
 
-.my-footer{
-    height: auto;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 16%, rgba(254, 199, 47, 0.36458333333333337) 84%);
+.my-footer {
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 16%,
+    rgba(254, 199, 47, 0.36458333333333337) 84%
+  );
 }
-.my-footer img{
-    
+.my-footer img {
+  width: 20%;
+  height: auto;
+  margin: auto;
+}
+
+/* Animaciones*/
+
+.textoanimado {
+  z-index: 12;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  animation: deslizar 30s linear infinite;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.naranja{
+    position: relative;
     width: 20%;
     height: auto;
-    margin:auto;
+    margin-top: -10%;
+    transform: translateX(-100%);
+    z-index: 1; 
+    transition: all 0.3 ease-out;
+    opacity: 0;
 }
+
+.naranja.show{
+   animation: slideInLeft 1s ease-out forwards;;
+}
+
+.my-icons {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+.my-icons.show {
+  animation: slideInRight 1s ease-out forwards;
+}
+.frutas{
+    position: relative;
+    width: 20%;
+    height: auto;
+    margin-top: -10%;
+    transform: translateX(100%);
+    z-index: 1; 
+    transition: all 0.3 ease-out;
+    opacity: 0;
+    margin-left: 60%;
+}
+
+.frutas.show{
+   animation: slideInRight 1s ease-out forwards;;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+  }
+
+
+
+/* Media*/
 @media (max-width: 992px) {
   .my-home-left h3 {
     margin-left: 5%;
@@ -251,7 +322,6 @@ body {
     right: 10%;
   }
   .reservas {
-    
     height: 550px;
   }
   .my-form {
