@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  margin: 0;
+  font-family: "avantgarde_bk_btbook";
+  color: #2c2f88 !important;
+}
+
+.my-nav-button {
+  background-color: hsla(44, 99%, 59%, 0.4) !important;
+}
+.offcanvas {
+  transition: transform 0.3s ease-in-out;
+}
+.my-offcanvas {
+  color: #2c2f88 !important;
+  text-transform: uppercase;
+  font-family: inherit;
+  width: 60% !important;
+  max-width: 400px;
+}
+
+.my-nav {
+  width: 80% !important;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+}
+.my-nav a {
+  text-align: center;
+  width: 20%;
+  font-size: 1.3vw;
+  text-transform: uppercase;
+  color: #2c2f88;
+  transition: all ease 0.6ms;
+}
+
+.my-nav a:hover {
+  font-size: 1.4vw;
+  background-color: hsla(44, 99%, 59%, 0.4);
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.my-home-left {
+  background-color: hsla(44, 99%, 59%, 0.4);
+}
+
+.my-home-left h3 {
+  font-family: "rossanova_personal_usebold";
+  margin-left: -25%;
+  font-size: 4vw;
+  margin-top: 15%;
+}
+
+.my-home-left p,
+.my-text-about {
+  margin-top: 2vw;
+  width: 95%;
+  margin-left: 5%;
+  font-size: 1.1vw;
+}
+
+.subtitle {
+  font-family: "rossanova_personal_usebold";
+  font-size: 4vw;
+  margin-top: 15%;
+}
+.my-carousel-slide {
+  background-color: hsla(44, 99%, 59%, 0.2);
+}
+
+.my-carousel-slide h3 {
+  font-family: "rossanova_personal_usebold";
+  font-size: 4vw;
+  margin-top: 45%;
+  color: hsla(44, 99%, 59%, 1);
+}
+.my-carousel-slide p,
+.my-about p {
+  font-size: 1.2vw;
+  margin-top: 5%;
+  color: hsla(44, 99%, 59%, 1);
+}
+.my-span {
+  color: #2c2f88 !important;
+}
+
+.my-about {
+  background-color: hsla(44, 99%, 59%, 0.2);
+}
+.my-about h3 {
+  font-family: "rossanova_personal_usebold";
+  font-size: 2.5rem;
+  color: hsla(44, 99%, 59%, 1);
+  margin-top: 5%;
+}
+
+.separador {
+  margin-top: -1px;
+  z-index: 100 !important;
+  z-index: 50;
+  height: 3vw;
+  background-color: #f6a000;
+  color: #2c2f88;
+  font-size: 1.7vw;
+}
+
+.my-menu {
+  margin: auto;
+  position: relative;
+  height: 90vw;
+  overflow: hidden;
+}
+
+.my-menu img {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  z-index: 0;
+}
+
+.my-menu img.active {
+  z-index: 1;
+}
+
+.reservas {
+  background-image: url("/img/mesa\ detalle.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 60%;
+  height: 800px;
+}
+
+.my-form {
+  background-color: hsla(44, 99%, 59%, 0.4);
+  border-radius: 30px;
+  margin-left: 10%;
+}
+
+.my-form input,
+.my-toggle button {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 18px;
+  margin: 20px 0px 20px 0px;
+  color: #2c2f88;
+}
+.my-form input:focus,
+.my-toggle button:focus {
+  outline: none;
+  border: 2px solid #f6a000;
+  box-shadow: none;
+}
+
+.my-check {
+  font-family: inherit;
+  font-size: 12px;
+  width: 80%;
+  margin: auto;
+}
+
+.my-form-button {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 40%;
+  border-radius: 10px;
+  margin-left: 30%;
+  transition: all 0.3 ease;
+}
+
+.my-form-button:hover {
+  background-color: white !important;
+  transform: scale(1.1);
+}
+
+.my-footer {
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 16%,
+    rgba(254, 199, 47, 0.36458333333333337) 84%
+  );
+}
+.my-footer img {
+  width: 20%;
+  height: auto;
+  margin: auto;
+}
+
+/* Animaciones*/
+
+.textoanimado {
+  z-index: 12;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  animation: deslizar 30s linear infinite;
+}
+
+@keyframes deslizar {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.naranja{
+    position: relative;
+    width: 20%;
+    height: auto;
+    margin-top: -10%;
+    transform: translateX(-100%);
+    z-index: 1; 
+    transition: all 0.3 ease-out;
+    opacity: 0;
+}
+
+.naranja.show{
+   animation: slideInLeft 1s ease-out forwards;;
+}
+
+.my-icons {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+.my-icons.show {
+  animation: slideInRight 1s ease-out forwards;
+}
+.frutas{
+    position: relative;
+    width: 20%;
+    height: auto;
+    margin-top: -10%;
+    transform: translateX(100%);
+    z-index: 1; 
+    transition: all 0.3 ease-out;
+    opacity: 0;
+    margin-left: 60%;
+}
+
+.frutas.show{
+   animation: slideInRight 1s ease-out forwards;;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+  }
+
+
+
+/* Media*/
+@media (max-width: 992px) {
+  .my-home-left h3 {
+    margin-left: 5%;
+    font-size: 20px;
+    margin-top: 5%;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .my-home-left p,
+  .my-text-about {
+    font-size: 2vw;
+  }
+
+  .my-carousel-slide h3,
+  .my-about h3 {
+    text-align: left !important;
+    font-size: 20px;
+    margin-top: 5%;
+  }
+  .my-carousel-slide p,
+  .my-about p {
+    font-size: 14px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .separador {
+    height: 5vw;
+    font-size: 2.5vw;
+  }
+  .my-menu {
+    height: 120vw;
+  }
+  .my-menu img {
+    right: 10%;
+  }
+  .reservas {
+    height: 550px;
+  }
+  .my-form {
+    margin-left: 0%;
+  }
+}
