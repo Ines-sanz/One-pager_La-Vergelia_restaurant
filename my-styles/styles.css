@@ -3,6 +3,7 @@
 }
 
 body {
+  max-width: 100vw !important;
   overflow-x: hidden !important;
   margin: 0;
   font-family: "avantgarde_bk_btbook";
@@ -208,7 +209,7 @@ body {
   overflow: hidden;
   position: absolute;
   left: 0;
-  width: 100%;
+  max-width: 100%;
   animation: deslizar 30s linear infinite;
 }
 
