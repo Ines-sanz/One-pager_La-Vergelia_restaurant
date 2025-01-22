@@ -20,7 +20,7 @@ A vibrant one-pager made with **HTML5** and **CSS3**, designed to align with the
 -  One-pager covering all the restaurant's needs.  🛠️
 -  Translated menu with a toggle button for language switching.  🌐
 -  Form for easy table booking.  📝
--  [View the entire brand design here](https://www.ines-sanz.com/design/vergeliabrand/) on my website.  🎨
+-  <a href="https://www.ines-sanz.com/design/vergeliabrand/" target="_blank" rel="noopener noreferrer">View the entire brand design here</a> on my website.  🎨
 
 ---
 
