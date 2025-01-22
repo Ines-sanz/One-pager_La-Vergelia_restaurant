@@ -9,7 +9,7 @@
 
 ## The Project
 <p align="center">
-  <img src="https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737552293/banner-la-vergelia-web_lzuqcy.jpg" alt="La Vergelia Preview" width="80%" />
+  <img src="https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737552293/banner-la-vergelia-web_lzuqcy.jpg" alt="La Vergelia Preview" />
 </p>
 
 A vibrant one-pager made with **HTML5** and **CSS3**, designed to align with the restaurant's brand aesthetics.  
@@ -20,7 +20,7 @@ A vibrant one-pager made with **HTML5** and **CSS3**, designed to align with the
 -  One-pager covering all the restaurant's needs.  🛠️
 -  Translated menu with a toggle button for language switching.  🌐
 -  Form for easy table booking.  📝
--  <a href="https://www.ines-sanz.com/design/vergeliabrand/" target="_blank" rel="noopener noreferrer">View the entire brand design here</a> on my website.  🎨
+-  <a href="https://www.ines-sanz.com/design/vergeliabrand/" target="_blank">View the entire brand design here</a> on my website.  🎨
 
 ---
 
