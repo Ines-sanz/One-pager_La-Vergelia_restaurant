@@ -1,7 +1,7 @@
 
 <p align="center">
   <!-- PROJECT LOGO -->
-  <img src="https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737551932/logo_ppjxj2.png" alt="Traffic Light Preview" align="center" />
+  <img src="https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737551932/logo_ppjxj2.png" alt="La Vergelia Preview" align="center" />
   <h3 align="center">One Pager Design for a 🌱 Vegan Restaurant</h3>
 </p>
 
