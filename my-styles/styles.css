@@ -135,7 +135,7 @@ body {
 }
 
 .reservas {
-  background-image: url("/img/mesa\ detalle.png");
+  background-image: url("https://res.cloudinary.com/dtr9ffwyc/image/upload/v1737550299/mesa_detalle_k56ns3.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 60%;
